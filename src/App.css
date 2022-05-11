@@ -1,0 +1,41 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+body,
+select,
+input {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 14px;
+}
+
+.btn__primary {
+  background: #405cf5;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+}

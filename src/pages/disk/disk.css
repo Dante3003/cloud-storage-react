@@ -1,0 +1,16 @@
+.folder-create-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.folder-create-modal__title {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 12px;
+}
+.folder-create_button {
+  margin-top: 12px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(48, 48, 206);
+}

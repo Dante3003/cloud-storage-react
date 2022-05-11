@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="89.243 13.258 88 70.405" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="filter0_d" x="0" y="0" width="256" height="238.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="52"/>
+      <feGaussianBlur stdDeviation="42"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0941176 0 0 0 0 0.513726 0 0 0 0 1 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter1_b" x="-29.0488" y="-76.6443" width="314.098" height="292.098" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImage" stdDeviation="56.5244"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+    </filter>
+  </defs>
+  <g filter="url(#filter0_d)" transform="matrix(1, 0, 0, 1, 5.242863, -18.742096)">
+    <path d="M84 38.8271V95.5738C84 99.3284 87.0506 102.4 90.779 102.4H165.221C168.949 102.4 172 99.3284 172 95.5738V50.0484C172 46.2938 168.949 43.2218 165.221 43.2218H131.877C129.843 43.2218 127.894 42.2831 126.581 40.6618L121.835 34.7311C120.564 33.1524 118.658 32.2138 116.624 32.1711L90.8214 32.0004C87.0506 31.9578 84 35.0298 84 38.8271Z" fill="#1883FF"/>
+  </g>
+  <g filter="url(#filter1_b)" transform="matrix(1, 0, 0, 1, 5.242863, -18.742096)">
+    <path d="M84 63.3851V94.791C84 98.9784 87.0506 102.405 90.779 102.405H165.221C168.949 102.405 172 98.9784 172 94.791V44.0181C172 39.8306 168.949 36.4045 165.221 36.4045H138.444C136.876 36.4045 135.309 37.0231 134.122 38.1652L116.963 54.2012C115.734 55.3433 114.167 55.9619 112.557 55.9619L90.8214 55.7239C87.0506 55.7239 84 59.15 84 63.3851Z" fill="white" fill-opacity="0.31"/>
+  </g>
+</svg>

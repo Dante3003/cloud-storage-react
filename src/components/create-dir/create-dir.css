@@ -1,0 +1,10 @@
+.folder-create_button {
+    border: none;
+    border-radius: 0;
+    padding: 8px 0px;
+}
+
+.btn.folder-modal__btn {
+    background: transparent;
+    padding: 8px 12px;
+}

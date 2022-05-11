@@ -1,0 +1,29 @@
+.btn {
+  cursor: pointer;
+  border: none;
+}
+
+.btn_large {
+  width: 100%;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn_primary {
+  background-color: #0070f3;
+  color: #fff;
+}
+
+.btn_grid {
+  font-size: 1.1rem;
+  background: transparent;
+  color: #3d3d3d;
+  opacity: 0.6;
+  transition: 0.2s opacity ease;
+}
+
+.btn_grid:hover {
+  opacity: 1;
+}
