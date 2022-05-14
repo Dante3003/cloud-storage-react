@@ -4,7 +4,7 @@ import { toast } from "../actions/toast";
 import { store } from "../reducers";
 
 const axios = Axios.create({
-  baseURL: "http://localhost:9999/api",
+  baseURL: process.env.REACT_APP_API_URL,
   headers: {
     "Content-Type": "application/json",
   },
