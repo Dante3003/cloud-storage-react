@@ -148,7 +148,6 @@ export function toggleFilePublic(fileId, isPublic) {
       const { data: response } = await axios.put("/files", {
         id: fileId,
       });
-      console.log(response);
       dispath(changeFilePublic(fileId, isPublic));
     } catch (error) {
       console.error(error);

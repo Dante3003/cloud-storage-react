@@ -40,10 +40,7 @@ export default function Disk() {
     setSearchText(event.target.value);
   }
 
-  console.log(currentDir);
-
   useEffect(() => {
-    console.log("useEffect");
     fetchData();
   }, [currentDir, fetchData]);
 

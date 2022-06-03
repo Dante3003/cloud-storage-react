@@ -9,20 +9,17 @@ function Uploader() {
   const files = useSelector((state) => state.upload.files);
   const dispatch = useDispatch();
   const closeHandler = () => dispatch(hideUploader);
-  return (
-    isVisible &&
-    files.length && (
-      <div className="upload-status">
-        <button className="btn uploader-close" onClick={closeHandler}>
-          <i className="fas fa-times"></i>
-        </button>
-        <h1>File upload</h1>
-        {files.map((file) => (
-          <UploadFile key={file.id} file={file} />
-        ))}
-      </div>
-    )
-  );
+  return isVisible && files.length ? (
+    <div className="upload-status">
+      <button className="btn uploader-close" onClick={closeHandler}>
+        <i className="fas fa-times"></i>
+      </button>
+      <h1>File upload</h1>
+      {files.map((file) => (
+        <UploadFile key={file.id} file={file} />
+      ))}
+    </div>
+  ) : null;
 }
 
 export default Uploader;

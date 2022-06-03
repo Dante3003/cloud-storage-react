@@ -1,13 +1,16 @@
 import axios from "../plugins/axios";
 import { setUser, logout } from "../reducers/user";
 
-export const register = async (payload) => {
-  try {
-    const response = await axios.post("/auth/registration", payload);
-    return response;
-  } catch (err) {
-    console.log(err);
-  }
+export const register = (payload) => {
+  return async (dispatch) => {
+    try {
+      const response = await axios.post("/auth/registration", payload);
+      localStorage.setItem("token", response.token);
+      dispatch(setUser(response.user));
+    } catch (err) {
+      console.log(err);
+    }
+  };
 };
 
 export const login = (payload) => {
@@ -37,6 +40,7 @@ export const auth = () => {
       }
     } catch (err) {
       localStorage.removeItem("token");
+      return false;
     }
   };
 };

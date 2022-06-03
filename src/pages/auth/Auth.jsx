@@ -22,9 +22,10 @@ export default function Login(props) {
     history.push("/");
   }
 
-  function registerHandler(userData) {
+  async function registerHandler(userData) {
     setLoading(true);
-    dispatch(register(userData));
+    await dispatch(register(userData));
+    history.push("/");
   }
 
   return (

@@ -15,9 +15,12 @@ function App() {
   useEffect(() => {
     async function checkAuth() {
       const isAuth = await dispatch(auth());
-      !isAuth && history?.push('/auth')
+      console.log(isAuth);
+      if (!isAuth) {
+        history?.push("/auth");
+      }
     }
-    checkAuth()
+    checkAuth();
   }, [dispatch, history]);
 
   return (
