@@ -1,11 +1,12 @@
 import React from "react";
+import { formatFileSize } from "../../utils/parsers";
 
 function UploaderFIle({ file }) {
   return (
     <div className="upload-file">
       <div className="upload-file__description">
         <div className="upload-file__name">{file.name}</div>
-        <div className="upload-file__size">0.3MB</div>
+        <div className="upload-file__size">{formatFileSize(file.size)}</div>
       </div>
       <div className="status">
         <div className="status__field">

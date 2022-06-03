@@ -15,7 +15,6 @@ function App() {
   useEffect(() => {
     async function checkAuth() {
       const isAuth = await dispatch(auth());
-      console.log(isAuth);
       if (!isAuth) {
         history?.push("/auth");
       }

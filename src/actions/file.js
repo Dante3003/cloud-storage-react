@@ -79,7 +79,6 @@ export function uploadFile(file, dirId) {
               progressEvent.target.getResponseHeader(
                 "x-decompressed-content-length"
               );
-          console.log("total", totalLength);
           if (totalLength) {
             uploadFile.progress = Math.round(
               (progressEvent.loaded * 100) / totalLength
@@ -145,7 +144,7 @@ export function deleteFile(fileId) {
 export function toggleFilePublic(fileId, isPublic) {
   return async (dispath) => {
     try {
-      const { data: response } = await axios.put("/files", {
+      await axios.put("/files", {
         id: fileId,
       });
       dispath(changeFilePublic(fileId, isPublic));
