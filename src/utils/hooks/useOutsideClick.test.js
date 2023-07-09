@@ -1,6 +1,7 @@
 import { fireEvent } from "@testing-library/react";
 import { renderHook } from "@testing-library/react-hooks";
 import useOutsideClick from "./useOutsideClick";
+// const useOutsideClick = require("./useOutsideClick");
 
 describe("useOutsideClick hook", () => {
   test("should handle outside click event", () => {
